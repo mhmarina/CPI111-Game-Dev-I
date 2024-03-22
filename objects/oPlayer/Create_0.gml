@@ -23,6 +23,7 @@ jumpSpr = sPlayer_Jump;
 walkSpr = sPlayer_Walking;
 runSpr = sPlayer_Run;
 crouchSpr = sPlayer_Crouch;
+attackSpr = sPlayer_Attack;
 
 //moving
 face = 1; //1 -> right, -1 -> left
@@ -55,6 +56,8 @@ isFlying = false;
 	coyoteJumpFrames = 5;
 	coyoteJumpTimer = 0;
 
+attackTimer = 30;
+canAttack = true;
 
 
 

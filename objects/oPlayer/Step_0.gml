@@ -2,7 +2,7 @@
 getControls();
 
 //crouching
-if(downKey && onGround){
+if(downKey && onGround && !attackKey){
 	crouching = true;
 }
 else{
@@ -116,6 +116,13 @@ if (ySpeed >= 0 && place_meeting(x,y+1,oWall)){
 }
 y += ySpeed;
 
+//attack
+if(attackKey && canAttack){
+	canAttack = false;
+	instance_create_layer(x+(8*face), y-17, "Instances", o_BulletPlayer);
+	alarm[1] = attackTimer;
+}
+
 //sprite control
 if (abs(xSpeed) > 0){
 	sprite_index = walkSpr;
@@ -132,6 +139,9 @@ if(crouching){
 }
 if(!onGround){
 	sprite_index = jumpSpr;
+}
+if(attackKey){
+	sprite_index = attackSpr;
 }
 mask_index = idleSpr;
 

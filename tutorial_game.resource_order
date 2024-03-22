@@ -29,7 +29,11 @@
     {"name":"oSlope","order":3,"path":"objects/oSlope/oSlope.yy",},
     {"name":"slope1","order":8,"path":"sprites/slope1/slope1.yy",},
     {"name":"oSlope1","order":4,"path":"objects/oSlope1/oSlope1.yy",},
+    {"name":"sPlayer_Damaged","order":10,"path":"sprites/sPlayer_Damaged/sPlayer_Damaged.yy",},
+    {"name":"sPlayer_Attack","order":9,"path":"sprites/sPlayer_Attack/sPlayer_Attack.yy",},
+    {"name":"o_BulletPlayer","order":6,"path":"objects/o_BulletPlayer/o_BulletPlayer.yy",},
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"sBullet_Player","order":11,"path":"sprites/sBullet_Player/sBullet_Player.yy",},
     {"name":"sPlayer_Crouch","order":6,"path":"sprites/sPlayer_Crouch/sPlayer_Crouch.yy",},
   ],
 }
