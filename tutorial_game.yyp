@@ -52,6 +52,7 @@
     {"id":{"name":"slope1","path":"sprites/slope1/slope1.yy",},},
     {"id":{"name":"oSlope1","path":"objects/oSlope1/oSlope1.yy",},},
     {"id":{"name":"sPlayer_Damaged","path":"sprites/sPlayer_Damaged/sPlayer_Damaged.yy",},},
+    {"id":{"name":"playerPortrait","path":"sprites/playerPortrait/playerPortrait.yy",},},
     {"id":{"name":"sPlayer_Attack","path":"sprites/sPlayer_Attack/sPlayer_Attack.yy",},},
     {"id":{"name":"o_BulletPlayer","path":"objects/o_BulletPlayer/o_BulletPlayer.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
