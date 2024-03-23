@@ -51,72 +51,84 @@ if(ySpeed >= 0 && !place_meeting(x+xSpeed, y + 1, oWall) && place_meeting(x+xSpe
 
 x += xSpeed;
 
+//flight controls
+if(isFlying){
+	ySpeed = 8;
+	if(upKey && !place_meeting(x,y-4,oWall)){
+		y -= ySpeed;
+	}
+	if(downKey && !place_meeting(x,y+4,oWall)){
+		y += ySpeed;
+	}
+}
+
 //y movement
 //gravity
-if(coyoteHangTimer > 0){
-	coyoteHangTimer --;
-}
 else{
-	//apply gravity to player
-	ySpeed += grav;
-	//we're no longer on ground
-	setOnGround(false);
-}
-
-//jump
-// to fly, remove the jumpmax
-if(jumpKeyBuffered && jumpCount < jumpMax){
-	//reset buffer
-	jumpKeyBuffered = false;
-	jumpKeyBufferTimer = 0;
-	if(!isFlying){
-		jumpCount++;
+	if(coyoteHangTimer > 0){
+	coyoteHangTimer --;
 	}
-	
-	//set the jump hold timer
-	jumpHoldTimer = jumpHoldFrames;
-	
-	//tell ourselves we are no longer jumping
-	setOnGround(false);
-}
-
-//cut off jump by releasing button
-if(!jumpKey){
-	jumpHoldTimer = 0;
-}
-
-if(jumpHoldTimer > 0){
-	//constantly set y speed to be jumping speed
-	ySpeed = jumpSpeed;
-	jumpHoldTimer--;
-}
-
-if(ySpeed > termVel){ySpeed = termVel} //cap ySpeed @ termVal
-
-var _subPixel = .5;
-
-if (place_meeting(x, y+ySpeed, oWall)){
-	var _pixelCheck = _subPixel * sign(ySpeed);
-
-	while !place_meeting(x,y+_pixelCheck,oWall){
-		y += _pixelCheck;
+	else{
+		//apply gravity to player
+		ySpeed += grav;
+		//we're no longer on ground
+		setOnGround(false);
 	}
+
+	//jump
+	// to fly, remove the jumpmax
+	if(jumpKeyBuffered && jumpCount < jumpMax){
+		//reset buffer
+		jumpKeyBuffered = false;
+		jumpKeyBufferTimer = 0;
+		if(!isFlying){
+			jumpCount++;
+		}
 	
-	//bonk code
-	if (ySpeed < 0){
+		//set the jump hold timer
+		jumpHoldTimer = jumpHoldFrames;
+	
+		//tell ourselves we are no longer jumping
+		setOnGround(false);
+	}
+
+	//cut off jump by releasing button
+	if(!jumpKey){
 		jumpHoldTimer = 0;
 	}
+
+	if(jumpHoldTimer > 0){
+		//constantly set y speed to be jumping speed
+		ySpeed = jumpSpeed;
+		jumpHoldTimer--;
+	}
+
+	if(ySpeed > termVel){ySpeed = termVel} //cap ySpeed @ termVal
+
+	var _subPixel = .5;
+
+	if (place_meeting(x, y+ySpeed, oWall)){
+		var _pixelCheck = _subPixel * sign(ySpeed);
+
+		while !place_meeting(x,y+_pixelCheck,oWall){
+			y += _pixelCheck;
+		}
 	
-	ySpeed = 0;
-}
+		//bonk code
+		if (ySpeed < 0){
+			jumpHoldTimer = 0;
+		}
+	
+		ySpeed = 0;
+	}
 
-//set if on the ground
-if (ySpeed >= 0 && place_meeting(x,y+1,oWall)){
-	setOnGround(true);	
+	//set if on the ground
+	if (ySpeed >= 0 && place_meeting(x,y+1,oWall)){
+		setOnGround(true);	
+	}
+	y += ySpeed;
 }
-y += ySpeed;
-
-//attack
+	//attack
 if(attackKey && canAttack){
 	canAttack = false;
 	instance_create_layer(x+(8*face), y-17, "Instances", o_BulletPlayer);
@@ -124,26 +136,39 @@ if(attackKey && canAttack){
 }
 
 //sprite control
-if (abs(xSpeed) > 0){
-	sprite_index = walkSpr;
+if(!isFlying){
+	if (abs(xSpeed) > 0){
+		sprite_index = walkSpr;
+		}
+	if(abs(xSpeed) >= moveSpeed[1]){
+		sprite_index = runSpr;
+		}
+	if(xSpeed == 0){
+		sprite_index = idleSpr;
+		}
+	if(crouching){
+		sprite_index = crouchSpr;
+		mask_index = crouchSpr;
+		}
+	if(!onGround){
+		sprite_index = jumpSpr;
+		}
+	if(attackKey){
+		sprite_index = attackSpr;
+		}
+	mask_index = idleSpr;
 }
-if(abs(xSpeed) >= moveSpeed[1]){
-	sprite_index = runSpr;
+
+else{
+	if(isFlying){
+		sprite_index = flySpr;
+	}
+	if(attackKey && isFlying){
+		sprite_index = flyAndAttackSpr;
+	}
+	grav = 0.05;
 }
-if(xSpeed == 0){
-	sprite_index = idleSpr;
-}
-if(crouching){
-	sprite_index = crouchSpr;
-	mask_index = crouchSpr;
-}
-if(!onGround){
-	sprite_index = jumpSpr;
-}
-if(attackKey){
-	sprite_index = attackSpr;
-}
-mask_index = idleSpr;
+
 
 
 

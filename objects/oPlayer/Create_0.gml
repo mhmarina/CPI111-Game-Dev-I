@@ -24,13 +24,16 @@ walkSpr = sPlayer_Walking;
 runSpr = sPlayer_Run;
 crouchSpr = sPlayer_Crouch;
 attackSpr = sPlayer_Attack;
+flySpr = sPlayer_Flying;
+flyAndAttackSpr = sPlayer_FlyAndAttack;
+damagedSpr = sPlayer_Damaged;
 
 //moving
 face = 1; //1 -> right, -1 -> left
 moveDir = 0;
 runType = 0;
 moveSpeed[0] = 2;
-moveSpeed[1] = 3.5;
+moveSpeed[1] = 3.5; //sprint
 xSpeed = 0;
 ySpeed = 0;
 

@@ -11,6 +11,7 @@ function getControls(){
 	rightKey = keyboard_check(ord("D")) || keyboard_check(vk_right);
 	leftKey = keyboard_check(ord("A")) || keyboard_check(vk_left);
 	downKey = keyboard_check(ord("S")) || keyboard_check(vk_down);
+	upKey = keyboard_check(ord("W")) || keyboard_check(vk_up);
 	attackKey = mouse_check_button(mb_left);
 	//action input
 	jumpKeyPressed = keyboard_check_pressed(vk_space);
