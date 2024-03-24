@@ -1,6 +1,26 @@
 
 getControls();
 
+if(place_meeting(x,y,o_BulletEnemy)){
+	if(isFlying){
+		sprite_index = damagedAndFlyingSpr;
+		isDamaged = true;
+		alarm[0] = 1;
+	}
+	else{
+		sprite_index = damagedSpr;
+		isDamaged = true;
+		alarm[0] = 1;
+	}	
+}
+
+//attack
+if(attackKey && canAttack){
+	canAttack = false;
+	instance_create_layer(x+(8*face), y-17, "Instances", o_BulletPlayer);
+	alarm[1] = attackTimer;
+}
+
 //crouching
 if(downKey && onGround && !attackKey){
 	crouching = true;
@@ -54,10 +74,10 @@ x += xSpeed;
 //flight controls
 if(isFlying){
 	ySpeed = 8;
-	if(upKey && !place_meeting(x,y-4,oWall)){
+	if(upKey && !place_meeting(x,y-ySpeed,oWall)){
 		y -= ySpeed;
 	}
-	if(downKey && !place_meeting(x,y+4,oWall)){
+	if(downKey && !place_meeting(x,y+ySpeed,oWall)){
 		y += ySpeed;
 	}
 }
@@ -118,7 +138,6 @@ else{
 		if (ySpeed < 0){
 			jumpHoldTimer = 0;
 		}
-	
 		ySpeed = 0;
 	}
 
@@ -128,46 +147,42 @@ else{
 	}
 	y += ySpeed;
 }
-	//attack
-if(attackKey && canAttack){
-	canAttack = false;
-	instance_create_layer(x+(8*face), y-17, "Instances", o_BulletPlayer);
-	alarm[1] = attackTimer;
-}
 
 //sprite control
-if(!isFlying){
-	if (abs(xSpeed) > 0){
-		sprite_index = walkSpr;
+if(!isDamaged){
+	if(!isFlying){
+		if (abs(xSpeed) > 0){
+			sprite_index = walkSpr;
 		}
-	if(abs(xSpeed) >= moveSpeed[1]){
-		sprite_index = runSpr;
+		if(abs(xSpeed) >= moveSpeed[1]){
+			sprite_index = runSpr;
 		}
-	if(xSpeed == 0){
-		sprite_index = idleSpr;
+		if(xSpeed == 0){
+			sprite_index = idleSpr;
 		}
+		if(attackKey){
+			sprite_index = attackSpr;
+		}
+		if(!onGround){
+			sprite_index = jumpSpr;
+		}
+	mask_index = idleSpr;
 	if(crouching){
 		sprite_index = crouchSpr;
 		mask_index = crouchSpr;
 		}
-	if(!onGround){
-		sprite_index = jumpSpr;
+	}
+
+	else{
+		if(isFlying){
+			sprite_index = flySpr;
 		}
-	if(attackKey){
-		sprite_index = attackSpr;
+		if(attackKey && isFlying){
+			sprite_index = flyAndAttackSpr;
 		}
-	mask_index = idleSpr;
+	}
 }
 
-else{
-	if(isFlying){
-		sprite_index = flySpr;
-	}
-	if(attackKey && isFlying){
-		sprite_index = flyAndAttackSpr;
-	}
-	grav = 0.05;
-}
 
 
 

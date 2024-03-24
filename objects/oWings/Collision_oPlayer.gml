@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-oPlayer.isFlying = true;
+other.isFlying = true;
 instance_destroy(self);
 
 

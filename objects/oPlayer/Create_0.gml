@@ -27,7 +27,7 @@ attackSpr = sPlayer_Attack;
 flySpr = sPlayer_Flying;
 flyAndAttackSpr = sPlayer_FlyAndAttack;
 damagedSpr = sPlayer_Damaged;
-
+damagedAndFlyingSpr = sPlayer_FlyingDamage;
 //moving
 face = 1; //1 -> right, -1 -> left
 moveDir = 0;
@@ -43,13 +43,14 @@ crouching = false;
 //Jumping
 grav = .275;
 termVel = 4; //cap on falling speed
-jumpSpeed = -3.15;
+jumpSpeed = -2.5;
 jumpMax = 2;
 jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 18;
 onGround = true;
 isFlying = false; 
+isDamaged = false;
 
 	//coyote time
 	//adding delay before player falls off ground (hang)
@@ -59,7 +60,7 @@ isFlying = false;
 	coyoteJumpFrames = 5;
 	coyoteJumpTimer = 0;
 
-attackTimer = 30;
+attackTimer = 10;
 canAttack = true;
 
 
