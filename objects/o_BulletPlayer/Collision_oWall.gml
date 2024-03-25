@@ -1,13 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-speed = 10;
-if(oPlayer.face == -1){
-	direction = 180;
-}
-else{
-	direction = 0;
-}
-
+instance_destroy(self);
 
 
 

@@ -2,8 +2,8 @@
 // You can write your code in this editor
 instance_destroy(self);
 
-if(oGameManager.playerHealth <= 90){
-	oGameManager.playerHealth += 10;
+if(oGameManager.playerHealth <= 80){
+	oGameManager.playerHealth += 20;
 }
 else{
 	oGameManager.playerHealth = 100;
