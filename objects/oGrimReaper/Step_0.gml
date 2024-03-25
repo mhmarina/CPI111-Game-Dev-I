@@ -15,7 +15,7 @@ if(direction == 0){
 }
 
 if(direction == 180){
-	myFace = 1;
+	face = -1;
 }
 
 

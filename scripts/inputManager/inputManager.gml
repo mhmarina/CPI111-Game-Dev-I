@@ -17,6 +17,7 @@ function getControls(){
 	jumpKeyPressed = keyboard_check_pressed(vk_space);
 	jumpKey = keyboard_check(vk_space);
 	runKey = keyboard_check(vk_shift);
+	cheatKey = keyboard_check(ord("N"));
 	
 	//jump key buffering
 	if(jumpKeyPressed){

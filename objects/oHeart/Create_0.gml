@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-playerHealth = 100;
-maxHealth = 100;
-playerLives = 3;
-myScore = 0;
+direction = 90;
 
 
 

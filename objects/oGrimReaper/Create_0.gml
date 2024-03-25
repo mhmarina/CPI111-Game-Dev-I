@@ -2,7 +2,7 @@
 // You can write your code in this editor
 direction = 0;
 maxDistance = 64;
-speed = 1;
+speed = 2;
 initialPos = x;
 face = 0;
 

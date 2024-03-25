@@ -1,6 +1,8 @@
 
 getControls();
-
+if(cheatKey && room != room_last){
+	room_goto_next();
+}
 if(place_meeting(x,y,o_BulletEnemy)){
 	if(isFlying){
 		sprite_index = damagedAndFlyingSpr;
