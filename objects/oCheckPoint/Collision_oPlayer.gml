@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-oGameManager.playerHealth -= 100;
-
+instance_create_depth(room_width/2,y,-1750,oBossTextBox,{dialogue:"Go to hell!!!"});
+show_debug_message(oBossTextBox.dialogue);
 
 
 

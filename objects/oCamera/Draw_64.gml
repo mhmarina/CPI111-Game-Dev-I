@@ -109,6 +109,3 @@ draw_healthbar(780,480,850,490,oGameManager.playerHealth,c_black,c_red,c_green,1
 
 
 
-
-
-

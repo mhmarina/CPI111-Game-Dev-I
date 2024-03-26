@@ -3,8 +3,8 @@
 playerHealth = 100;
 maxHealth = 300;
 myScore = 0;
-
-
+level1Score = 0;
+level2Score = 0;
 
 
 
