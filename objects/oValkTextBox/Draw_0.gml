@@ -1,10 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-playerHealth = 100;
-maxHealth = 1000000;
-myScore = 0;
-level1Score = 0;
-level2Score = 0;
+
+
+depth = -1900;
+draw_self();
+draw_set_color(c_white);
+draw_set_font(Minecraftia);
+draw_text(x-80, y-60, dialogue[i]);
+
+
+
 
 
 

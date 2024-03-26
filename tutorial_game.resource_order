@@ -50,6 +50,7 @@
     {"name":"oSlope","order":3,"path":"objects/oSlope/oSlope.yy",},
     {"name":"sGrimReaper","order":23,"path":"sprites/sGrimReaper/sGrimReaper.yy",},
     {"name":"Clouds","order":26,"path":"sprites/Clouds/Clouds.yy",},
+    {"name":"sCheckPoint_Released","order":34,"path":"sprites/sCheckPoint_Released/sCheckPoint_Released.yy",},
     {"name":"oBossTextBox","order":18,"path":"objects/oBossTextBox/oBossTextBox.yy",},
     {"name":"oValkTextBox","order":17,"path":"objects/oValkTextBox/oValkTextBox.yy",},
     {"name":"sHealth","order":22,"path":"sprites/sHealth/sHealth.yy",},

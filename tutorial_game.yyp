@@ -69,6 +69,7 @@
     {"id":{"name":"oSlope","path":"objects/oSlope/oSlope.yy",},},
     {"id":{"name":"sGrimReaper","path":"sprites/sGrimReaper/sGrimReaper.yy",},},
     {"id":{"name":"Clouds","path":"sprites/Clouds/Clouds.yy",},},
+    {"id":{"name":"sCheckPoint_Released","path":"sprites/sCheckPoint_Released/sCheckPoint_Released.yy",},},
     {"id":{"name":"oBossTextBox","path":"objects/oBossTextBox/oBossTextBox.yy",},},
     {"id":{"name":"oValkTextBox","path":"objects/oValkTextBox/oValkTextBox.yy",},},
     {"id":{"name":"sHealth","path":"sprites/sHealth/sHealth.yy",},},

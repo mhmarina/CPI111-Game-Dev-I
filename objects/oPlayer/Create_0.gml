@@ -49,7 +49,7 @@ jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 18;
 onGround = true;
-isFlying = false; 
+isFlying = true; 
 isDamaged = false;
 
 	//coyote time
