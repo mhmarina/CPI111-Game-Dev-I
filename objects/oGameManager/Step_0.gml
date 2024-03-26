@@ -1,16 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(playerHealth <= 0){
-	playerLives--;
-	if(playerLives == 0){
-		room_restart();
-	}
-	else{
-		playerHealth = maxHealth;
-	}
+	room_restart();
 }
-
-
 
 
 

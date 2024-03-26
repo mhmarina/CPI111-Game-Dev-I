@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(oGameManager.playerHealth <= 70){
+if(oGameManager.playerHealth <= oGameManager.maxHealth - 30){
 	oGameManager.playerHealth += 30;
 }
 else{
