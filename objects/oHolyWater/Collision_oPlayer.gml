@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(oGameManager.playerHealth <= oGameManager.maxHealth - 50){
-	oGameManager.playerHealth += 50;
+if(oGameManager.playerHealth <= oGameManager.maxHealth - 75){
+	oGameManager.playerHealth += 75;
 }
 else{
-	oGameManager.playerHealth = 100;
+	oGameManager.playerHealth = oGameManager.maxHealth;
 }
 
+oGameManager.myScore += 5;
 instance_destroy(self);
 
 

@@ -49,9 +49,9 @@ jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 18;
 onGround = true;
-isFlying = true; 
+isFlying = false; 
 isDamaged = false;
-
+depth = -2000
 	//coyote time
 	//adding delay before player falls off ground (hang)
 	//also adding buffer where player can jump when off the ground (jump)

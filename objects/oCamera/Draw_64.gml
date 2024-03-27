@@ -5,7 +5,7 @@ draw_sprite(UI_layout,-1,930,520);
 draw_text(820,500,oGameManager.myScore);
 draw_set_color(c_white);
 draw_set_font(Minecraftia);
-draw_healthbar(780,480,850,490,oGameManager.playerHealth,c_black,c_red,c_green,1,true,true);
+draw_healthbar(700,480,850,490,oGameManager.playerHealth/3,c_black,c_red,c_green,1,true,true);
 
 
 

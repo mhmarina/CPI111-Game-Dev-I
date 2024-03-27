@@ -6,7 +6,7 @@ if(room == Level1){
 }
 
 else if(room == Level2){
-	instance_create_layer(room_width/2,self.y+175,"Instances",oValkTextBox);
+	instance_create_layer(room_width/2,self.y+165,"Instances",oValkTextBox);
 }
 
 

@@ -3,7 +3,10 @@
 move_wrap(true, false, 0);
 
 if(y > room_height + 20){
-	room_restart();
+	if(room == Level2){
+		oGameManager.myScore = oGameManager.level1Score;
+	}
+	oGameManager.playerHealth = -1;
 }
 
 

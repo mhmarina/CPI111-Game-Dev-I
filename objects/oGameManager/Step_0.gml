@@ -8,6 +8,7 @@ if(playerHealth <= 0){
 	if(room == Level2){
 		myScore = level1Score;
 	}
+	playerHealth = maxHealth;
 	room_restart();
 }
 

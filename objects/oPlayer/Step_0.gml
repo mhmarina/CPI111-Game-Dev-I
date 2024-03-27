@@ -1,7 +1,11 @@
 
 getControls();
 if(cheatKey && room != room_last){
+	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
+}
+if(flyKey){
+	isFlying = !isFlying;
 }
 if(place_meeting(x,y,o_BulletEnemy)){
 	if(isFlying){

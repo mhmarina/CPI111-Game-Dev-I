@@ -6,7 +6,7 @@ if(oGameManager.playerHealth <= oGameManager.maxHealth - 25){
 	oGameManager.playerHealth += 25;
 }
 else{
-	oGameManager.playerHealth = 100;
+	oGameManager.playerHealth = oGameManager.maxHealth;
 }
 
 oGameManager.myScore += 10;

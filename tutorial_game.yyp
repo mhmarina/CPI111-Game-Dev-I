@@ -60,6 +60,7 @@
     {"id":{"name":"o_BulletEnemy","path":"objects/o_BulletEnemy/o_BulletEnemy.yy",},},
     {"id":{"name":"sPlayer_Walking","path":"sprites/sPlayer_Walking/sPlayer_Walking.yy",},},
     {"id":{"name":"sPlayer_FlyAndAttack","path":"sprites/sPlayer_FlyAndAttack/sPlayer_FlyAndAttack.yy",},},
+    {"id":{"name":"Clouds2","path":"sprites/Clouds2/Clouds2.yy",},},
     {"id":{"name":"CloudsLight","path":"sprites/CloudsLight/CloudsLight.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"oWings","path":"objects/oWings/oWings.yy",},},

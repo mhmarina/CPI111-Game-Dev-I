@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sCheckPoint",
-  "bbox_bottom": 28,
+  "name": "Clouds2",
+  "bbox_bottom": 299,
   "bbox_left": 0,
-  "bbox_right": 28,
-  "bbox_top": 0,
+  "bbox_right": 239,
+  "bbox_top": 149,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a402c776-b4aa-4f0d-a236-1ce37252da51",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1c03a92-b9b2-4ead-8b4b-d78d48bc5e4a",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 300,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"02ce36bb-cea1-4836-bca7-84ea914336ca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"341fdd18-d52c-410c-b66b-16bb3f996bfa","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sCheckPoint",
+    "name": "Clouds2",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a402c776-b4aa-4f0d-a236-1ce37252da51","path":"sprites/sCheckPoint/sCheckPoint.yy",},},},"Disabled":false,"id":"ae4a9494-f6cf-4d7d-a496-9c28f722f124","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d1c03a92-b9b2-4ead-8b4b-d78d48bc5e4a","path":"sprites/Clouds2/Clouds2.yy",},},},"Disabled":false,"id":"31524436-1582-4a8b-8eac-9c2658f27bd7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 240,
 }

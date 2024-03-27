@@ -41,6 +41,7 @@
     {"name":"o_BulletEnemy","order":9,"path":"objects/o_BulletEnemy/o_BulletEnemy.yy",},
     {"name":"sPlayer_Walking","order":2,"path":"sprites/sPlayer_Walking/sPlayer_Walking.yy",},
     {"name":"sPlayer_FlyAndAttack","order":13,"path":"sprites/sPlayer_FlyAndAttack/sPlayer_FlyAndAttack.yy",},
+    {"name":"Clouds2","order":35,"path":"sprites/Clouds2/Clouds2.yy",},
     {"name":"CloudsLight","order":28,"path":"sprites/CloudsLight/CloudsLight.yy",},
     {"name":"sWall","order":7,"path":"sprites/sWall/sWall.yy",},
     {"name":"oWings","order":7,"path":"objects/oWings/oWings.yy",},

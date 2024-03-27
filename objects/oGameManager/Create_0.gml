@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-playerHealth = 100;
-maxHealth = 1000000;
+playerHealth = 300;
+maxHealth = 300;
 myScore = 0;
 level1Score = 0;
 level2Score = 0;
