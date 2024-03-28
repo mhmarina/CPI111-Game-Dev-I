@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-enemyCanShoot = true;
-face = 1;
-range = 100;
+canShoot = false;
+bossHealth = 1000;
+
+numConseqShots = 0;
+mask_index = sDemoness;
 
 
 

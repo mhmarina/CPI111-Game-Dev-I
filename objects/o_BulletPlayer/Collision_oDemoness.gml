@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-enemyCanShoot = true;
-face = 1;
-range = 100;
+oDemoness.bossHealth -= 25;
+oDemoness.sprite_index = sDemonessDamaged;
+alarm[0] = 1;
+
+
+
 
 
 

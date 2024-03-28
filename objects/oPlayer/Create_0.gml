@@ -63,6 +63,10 @@ depth = -2000
 attackTimer = 10;
 canAttack = true;
 
+if(room == Level3){
+	isFlying = true;
+}
+
 
 
 

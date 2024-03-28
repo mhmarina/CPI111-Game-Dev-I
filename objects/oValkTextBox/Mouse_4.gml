@@ -12,6 +12,9 @@ else{
 }
 	if(room == Level2){
 	oGameManager.level2Score = oGameManager.myScore;
+	if(oGameManager.level2Score > 1){
+		oGameManager.maxHealth = oGameManager.maxHealth * (oGameManager.myScore/2);
+	}
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_previous();
 }	

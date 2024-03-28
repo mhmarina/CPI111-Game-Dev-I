@@ -1,8 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-enemyCanShoot = true;
-face = 1;
-range = 100;
+
+speed = 8;
+direction = point_direction(x,y,oPlayer.x,oPlayer.y-5);
+
+
+
+
 
 
 

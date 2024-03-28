@@ -1,5 +1,6 @@
 
 getControls();
+
 if(cheatKey && room != room_last){
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
