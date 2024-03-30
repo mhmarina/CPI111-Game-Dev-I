@@ -5,7 +5,13 @@ if(i < array_length(dialogue) - 1){
 }
 
 else{
-	oDemoness.flag = 1;
+	if(room == Level3){
+		oDemoness.flag = 1;
+	}
+	if(room == cutscene){
+		instance_create_layer(0,0,"Instances",oValkTextBox);
+		instance_destroy(self);
+	}
 }
 
 

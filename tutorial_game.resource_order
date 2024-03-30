@@ -20,6 +20,7 @@
     {"name":"sPlayer_Run","order":5,"path":"sprites/sPlayer_Run/sPlayer_Run.yy",},
     {"name":"sEnemy","order":20,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"oDemoness","order":19,"path":"objects/oDemoness/oDemoness.yy",},
+    {"name":"cutscene","order":5,"path":"rooms/cutscene/cutscene.yy",},
     {"name":"playerPortrait","order":31,"path":"sprites/playerPortrait/playerPortrait.yy",},
     {"name":"sDemonessDefeated_ANIM","order":42,"path":"sprites/sDemonessDefeated_ANIM/sDemonessDefeated_ANIM.yy",},
     {"name":"oCheckPoint","order":16,"path":"objects/oCheckPoint/oCheckPoint.yy",},

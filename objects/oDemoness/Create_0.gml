@@ -1,15 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-canShoot = false;
+canShoot = true;
 //bossHealth = 1500;
 bossHealth = 1500;
-isDead = true;
+isDead = false;
 flag = 0;
 
 numConseqShots = 0;
 mask_index = sDemoness;
-
-alarm[1] = 120;
 
 
 

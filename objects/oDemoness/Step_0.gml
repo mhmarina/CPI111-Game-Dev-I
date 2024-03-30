@@ -8,7 +8,7 @@ if(canShoot){
 		alarm[0] = 5;
 	}
 	else{
-		alarm[0] = 100;
+		alarm[0] = 60;
 		numConseqShots = 0;
 	}
 	numConseqShots ++;

@@ -8,7 +8,7 @@ if(cheatKey && room != room_last){
 if(flyKey){
 	isFlying = !isFlying;
 }
-if(place_meeting(x,y,o_BulletEnemy)){
+if(place_meeting(x,y,o_BulletEnemy) || place_meeting(x,y,oFireball)){
 	if(isFlying){
 		sprite_index = damagedAndFlyingSpr;
 		isDamaged = true;

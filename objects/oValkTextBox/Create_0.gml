@@ -11,7 +11,10 @@ if(room == Level2){
 	dialogue[0] = "I am flying again!";
 	dialogue[1] = "Let's soar our way \nto victory!";
 }
-
+if(room == cutscene){
+	dialogue[0] = "no, you'll regret this...";
+	dialogue[1] = "I'LL KILL YOU!!";
+}
 
 
 
