@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+dialogue = [];
+i = 0;
 
-draw_self();
-draw_set_color(c_white);
-draw_set_font(Minecraftia);
-draw_text(x-80, y-60, dialogue);
+dialogue[0] = "Oh no...";
+dialogue[1] = "OH NOOO!!!";
+
+
 
 
 

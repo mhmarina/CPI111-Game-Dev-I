@@ -5,8 +5,7 @@ maxDistance = 64;
 speed = 2;
 initialPos = x;
 face = 0;
-
-
+homing = false;
 
 
 

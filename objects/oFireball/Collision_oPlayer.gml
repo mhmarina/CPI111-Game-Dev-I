@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-oGameManager.playerHealth -= 20;
+oGameManager.playerHealth -= 15;
 
 
 

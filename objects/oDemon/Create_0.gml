@@ -3,6 +3,10 @@
 enemyCanShoot = true;
 face = 1;
 range = 100;
+homing = false;
+if(room == Level3){
+	homing = true;
+}
 
 
 

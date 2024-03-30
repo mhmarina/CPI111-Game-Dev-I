@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-canShoot = false;
-//bossHealth = 1500;
-bossHealth = 1500;
-isDead = true;
-flag = 0;
+if(room == Level3){
+	canShoot = false;
+	alarm[2] = 120;
+}
 
-numConseqShots = 0;
-mask_index = sDemoness;
 
-alarm[1] = 120;
+
+
+
+
 
 
 

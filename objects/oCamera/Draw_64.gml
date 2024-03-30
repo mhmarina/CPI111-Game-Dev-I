@@ -7,9 +7,9 @@ draw_set_color(c_white);
 draw_set_font(Minecraftia);
 draw_healthbar(700,480,850,490,oGameManager.playerHealth/3,c_black,c_red,c_green,1,true,true);
 
-if(room == Level3){
+if(room == Level3 && instance_exists(oDemoness)){
 	draw_sprite(sBossIcon,1,930,100);
-	draw_healthbar(400,40,850,50,oDemoness.bossHealth/10,c_black,c_grey,c_red,1,true,true);
+	draw_healthbar(100,40,850,50,oDemoness.bossHealth/15,c_black,c_grey,c_red,1,true,true);
 }
 
 
