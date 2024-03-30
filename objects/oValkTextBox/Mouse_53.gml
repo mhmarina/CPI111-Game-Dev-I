@@ -16,7 +16,7 @@ else{
 		oGameManager.maxHealth = oGameManager.maxHealth * (oGameManager.myScore/2);
 	}
 	oGameManager.playerHealth = oGameManager.maxHealth;
-	room_goto_previous();
+	room_goto_next();
 }	
 }
 

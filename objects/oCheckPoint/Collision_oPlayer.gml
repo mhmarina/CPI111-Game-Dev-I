@@ -1,13 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 sprite_index = sCheckPoint_Released;
-if(room == Level1){
-	instance_create_layer(room_width/2,self.y,"Instances",oValkTextBox);
-}
-
-else if(room == Level2){
-	instance_create_layer(room_width/2,self.y+165,"Instances",oValkTextBox);
-}
+instance_create_layer(0,0,"Instances",oValkTextBox);
 
 
 
