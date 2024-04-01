@@ -5,10 +5,10 @@ if(cheatKey && room != room_last){
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
 }
-
-if(backKey && room != room_first){
-	oGameManager.playerHealth = oGameManager.maxHealth;
-	room_goto_previous();
+if(cheatKey && room == Level3){
+	instance_destroy(oCamera);
+	instance_destroy(oGameManager);
+	room_goto(MainMenu);
 }
 
 
