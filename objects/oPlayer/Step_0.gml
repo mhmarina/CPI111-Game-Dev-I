@@ -5,6 +5,13 @@ if(cheatKey && room != room_last){
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
 }
+
+if(backKey && room != room_first){
+	oGameManager.playerHealth = oGameManager.maxHealth;
+	room_goto_previous();
+}
+
+
 if(flyKey){
 	isFlying = !isFlying;
 }

@@ -18,6 +18,7 @@ function getControls(){
 	jumpKey = keyboard_check(vk_space);
 	runKey = keyboard_check(vk_shift);
 	cheatKey = keyboard_check_pressed(ord("N"));
+	backKey = keyboard_check(ord("B"));
 	flyKey = keyboard_check_pressed(ord("M"));
 	
 	//jump key buffering
