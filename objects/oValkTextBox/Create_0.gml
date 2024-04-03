@@ -3,6 +3,10 @@
 
 dialogue = [];
 i = 0;
+if(room == OpeningCutscene){
+	dialogue[0] = "I must take back my home."
+	dialogue[1] = "I must defeat \nthe Demoness!"
+}
 if(room == Level1){
 	dialogue[0] = "Level 1 Cleared!";
 	dialogue[1] = "The heavens will soon\nbe ours once more.";
