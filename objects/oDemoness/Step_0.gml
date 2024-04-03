@@ -14,8 +14,10 @@ if(canShoot){
 	numConseqShots ++;
 }
 
-if(!isDead && irandom_range(0,150) == 1){
+if(!isDead && !spawnDemon){
 	instance_create_layer(x-50, irandom_range(60,room_height-100),"Instances",oDemon,{range:350, direction:point_direction(x,y,oPlayer.x,oPlayer.y-5), speed:2, homing: true});
+	spawnDemon = true;
+	alarm[1] = 60;
 }
 
 if(flag == 1){

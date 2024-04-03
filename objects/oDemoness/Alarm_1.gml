@@ -1,13 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-canShoot = true;
-//bossHealth = 1500;
-bossHealth = 1500;
-isDead = false;
-flag = 0;
 spawnDemon = false;
-numConseqShots = 0;
-mask_index = sDemoness;
+
+
+
+
+
+
+
+
 
 
 
