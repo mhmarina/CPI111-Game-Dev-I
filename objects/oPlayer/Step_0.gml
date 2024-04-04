@@ -5,10 +5,10 @@ if(cheatKey && room != room_last){
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
 }
+
 if(cheatKey && room == Level3){
 	instance_destroy(oCamera);
 	instance_destroy(oGameManager);
-	room_goto(MainMenu);
 }
 
 
@@ -30,6 +30,7 @@ if(place_meeting(x,y,o_BulletEnemy) || place_meeting(x,y,oFireball)){
 
 //attack
 if(attackKey && canAttack){
+	audio_play_sound(oAudioManager.PlayerShootingSFX, 10, false);
 	canAttack = false;
 	instance_create_layer(x+(8*face), y-17, "Instances", o_BulletPlayer);
 	alarm[1] = attackTimer;
@@ -116,6 +117,7 @@ else{
 		jumpKeyBuffered = false;
 		jumpKeyBufferTimer = 0;
 		if(!isFlying){
+			audio_play_sound(oAudioManager.PlayerJumpSFX,10,false);
 			jumpCount++;
 		}
 	

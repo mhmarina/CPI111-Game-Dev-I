@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_play_sound(oAudioManager.PlayersHitSFX, 10, false);
 oGameManager.playerHealth -= 20;
 
 

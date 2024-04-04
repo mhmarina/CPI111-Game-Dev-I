@@ -16,6 +16,11 @@ else{
 		}
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	}
+	if(room == Level3){
+		instance_destroy(oCamera);
+		instance_destroy(oGameManager);
+		room_goto(victoryscene);
+	}
 	room_goto_next();
 }	
 

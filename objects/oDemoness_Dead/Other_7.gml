@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 oPlayer.canAttack = true;
+instance_create_layer(0,0,"Instances",oValkTextBox);
 instance_destroy(self);
 
 

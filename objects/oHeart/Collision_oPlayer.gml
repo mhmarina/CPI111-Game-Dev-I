@@ -9,6 +9,8 @@ else{
 	oGameManager.playerHealth = oGameManager.maxHealth;
 }
 
+
+audio_play_sound(oAudioManager.HealthpickupSFX,10,false);
 oGameManager.myScore += 10;
 
 

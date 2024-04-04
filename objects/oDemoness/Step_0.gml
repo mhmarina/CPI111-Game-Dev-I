@@ -8,6 +8,7 @@ if(canShoot){
 		alarm[0] = 5;
 	}
 	else{
+		audio_play_sound(oAudioManager.FireShotSFX,5,false);
 		alarm[0] = 60;
 		numConseqShots = 0;
 	}
@@ -21,11 +22,13 @@ if(!isDead && !spawnDemon){
 }
 
 if(flag == 1){
+	audio_play_sound(oAudioManager.BossDeathSFX, 20, false);
 	instance_destroy(oBossTextBox);
 	instance_change(oDemoness_Dead,true);
 }
 
 if(bossHealth <= 0 && flag = 0){
+	audio_stop_all();
 	canShoot = false;
 	isDead = true;
 	oPlayer.canAttack = false;

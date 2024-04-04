@@ -19,7 +19,10 @@ if(room == cutscene){
 	dialogue[0] = "no, you'll regret this...";
 	dialogue[1] = "I'LL KILL YOU!!";
 }
-
+if(room == Level3){
+	audio_play_sound(oAudioManager.VictoryMusic, 10, true);
+	dialogue[0] = "VICTORY!!!"
+}
 
 
 
