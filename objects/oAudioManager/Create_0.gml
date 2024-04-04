@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-BossMusic = AltBossMusic;
+BossMusic = AltBossMusic2;
 BossDeathSFX = BossExplosion;
 CutSceneSFX = CutsceneSuspense;
 DemonDeadSFX = DemonHitSFX;

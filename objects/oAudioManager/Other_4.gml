@@ -18,7 +18,7 @@ if(room == cutscene){
 
 if(room == Level3 && !audio_is_playing(BossMusic)){
 	audio_stop_all();
-	audio_play_sound(BossMusic, 10, true);
+	audio_play_sound(BossMusic, 1, true);
 }
 
 if(room == OpeningCutscene){

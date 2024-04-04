@@ -8,7 +8,6 @@ if(canShoot){
 		alarm[0] = 5;
 	}
 	else{
-		audio_play_sound(oAudioManager.FireShotSFX,5,false);
 		alarm[0] = 60;
 		numConseqShots = 0;
 	}
