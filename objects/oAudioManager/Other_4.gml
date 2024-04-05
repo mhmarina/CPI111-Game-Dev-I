@@ -8,7 +8,7 @@ if(room == MainMenu){
 
 if((room == Level1 || room == Level2) && !audio_is_playing(LevelsMusic)){
 	audio_stop_all();
-	audio_play_sound(LevelsMusic, 10, true);
+	audio_play_sound(LevelsMusic, 1, true);
 }
 
 if(room == cutscene){
