@@ -90,7 +90,6 @@
     {"id":{"name":"CloudsLight","path":"sprites/CloudsLight/CloudsLight.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"sDemonessDefeated","path":"sprites/sDemonessDefeated/sDemonessDefeated.yy",},},
-    {"id":{"name":"LevelMusic","path":"sounds/LevelMusic/LevelMusic.yy",},},
     {"id":{"name":"oWings","path":"objects/oWings/oWings.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sPlayer_idle","path":"sprites/sPlayer_idle/sPlayer_idle.yy",},},
@@ -140,6 +139,7 @@
     {"id":{"name":"o_BulletPlayer","path":"objects/o_BulletPlayer/o_BulletPlayer.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sBullet_Player","path":"sprites/sBullet_Player/sBullet_Player.yy",},},
+    {"id":{"name":"LevelMusic","path":"sounds/LevelMusic/LevelMusic.yy",},},
     {"id":{"name":"sPlayer_Crouch","path":"sprites/sPlayer_Crouch/sPlayer_Crouch.yy",},},
   ],
   "RoomOrderNodes": [
