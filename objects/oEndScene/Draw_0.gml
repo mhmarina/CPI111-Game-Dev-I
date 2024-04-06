@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(oGameManager);
-room_goto(MainMenu);
+draw_self();
+draw_set_font(Minecraftia);
+draw_set_color(c_black);
+draw_text(10,10,"Final Score:");
+draw_text(10,25,oGameManager.finalScore);
 
 
 

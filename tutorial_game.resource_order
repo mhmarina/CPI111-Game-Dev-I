@@ -1,6 +1,4 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [
-    {"name":"LevelMusic","order":1,"path":"sounds/LevelMusic/LevelMusic.yy",},
-  ],
+  "ResourceOrderSettings": [],
 }

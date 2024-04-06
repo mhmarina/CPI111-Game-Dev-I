@@ -8,6 +8,9 @@ if(cheatKey && room != room_last){
 
 if(cheatKey && room == Level3){
 	instance_destroy(oCamera);
+}
+
+if(cheatKey && room == victoryscene){
 	instance_destroy(oGameManager);
 }
 
