@@ -1,4 +1,9 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"sInfo","order":2,"path":"sprites/sInfo/sInfo.yy",},
+    {"name":"roomInfo","order":1,"path":"rooms/roomInfo/roomInfo.yy",},
+    {"name":"sButtonInfo","order":1,"path":"sprites/sButtonInfo/sButtonInfo.yy",},
+    {"name":"oButtonInfo","order":1,"path":"objects/oButtonInfo/oButtonInfo.yy",},
+  ],
 }

@@ -6,6 +6,11 @@ if(cheatKey && room != room_last){
 	room_goto_next();
 }
 
+if(previousKey && room != OpeningCutscene){
+	oGameManager.playerHealth = oGameManager.maxHealth;
+	room_goto_previous();
+}
+
 if(cheatKey && room == Level3){
 	instance_destroy(oCamera);
 }

@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(instance_number(oAudioManager) > 1){
+	instance_destroy(self);
+}
 BossMusic = AltBossMusic2;
 BossDeathSFX = BossExplosion;
 CutSceneSFX = CutsceneSuspense;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OButMainMenu",
+  "name": "oButtonInfo",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sMainMenu",
-    "path": "sprites/sMainMenu/sMainMenu.yy",
+    "name": "sButtonInfo",
+    "path": "sprites/sButtonInfo/sButtonInfo.yy",
   },
   "spriteMaskId": null,
   "visible": true,
