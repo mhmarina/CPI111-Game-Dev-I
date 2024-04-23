@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 move_wrap(true, false, 0);
-
 if(y > room_height + 20){
 	if(room == Level2){
 		oGameManager.myScore = oGameManager.level1Score;

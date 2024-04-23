@@ -2,8 +2,11 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"Alagard","order":1,"path":"fonts/Alagard/Alagard.yy",},
+    {"name":"oExplosion","order":3,"path":"objects/oExplosion/oExplosion.yy",},
+    {"name":"deathSFX","order":1,"path":"sounds/deathSFX/deathSFX.yy",},
     {"name":"sInfo","order":2,"path":"sprites/sInfo/sInfo.yy",},
     {"name":"oHighScore","order":2,"path":"objects/oHighScore/oHighScore.yy",},
+    {"name":"sExplosion","order":3,"path":"sprites/sExplosion/sExplosion.yy",},
     {"name":"roomInfo","order":1,"path":"rooms/roomInfo/roomInfo.yy",},
     {"name":"sButtonInfo","order":1,"path":"sprites/sButtonInfo/sButtonInfo.yy",},
     {"name":"roomMainInit","order":2,"path":"rooms/roomMainInit/roomMainInit.yy",},

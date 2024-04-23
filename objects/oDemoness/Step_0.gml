@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if(!instance_exists(oPlayer)){
+	exit;
+}
 if(canShoot){
 	instance_create_layer(x,y+(random_range(-5,5)),"Instances",oFireball);
 	canShoot = false;

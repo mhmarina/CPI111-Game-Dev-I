@@ -18,6 +18,7 @@ TitleMusic = TitleScreenMusic;
 VictoryMusic = VictoryScreenMusic;
 HealthpickupSFX = pickupSound;
 WingsSFX = WingsSound;
+playerDeathSFX = deathSFX;
 
 
 

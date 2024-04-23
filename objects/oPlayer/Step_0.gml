@@ -1,9 +1,28 @@
 
 getControls();
 
+if(oGameManager.playerHealth <= 0){
+	instance_create_layer(x,y,"Instances",oExplosion);
+	instance_destroy(self);
+}
+
 if(cheatKey && room != room_last){
 	oGameManager.playerHealth = oGameManager.maxHealth;
 	room_goto_next();
+}
+
+if(restartKey){
+	oGameManager.playerHealth = oGameManager.maxHealth;
+	if(room == Level1){
+		oGameManager.myScore = 0;	
+	}
+	if(room == Level2){
+		oGameManager.myScore = oGameManager.level1Score;	
+	}	
+	if(room == Level3){
+		oGameManager.myScore = oGameManager.level2Score;	
+	}
+	room_restart();
 }
 
 if(previousKey && room != OpeningCutscene){

@@ -1,7 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
-speed = 8;
-direction = point_direction(x,y,oPlayer.x,oPlayer.y-20);
+audio_play_sound(oAudioManager.playerDeathSFX,1,false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
