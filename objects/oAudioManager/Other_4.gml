@@ -21,6 +21,11 @@ if(room == Level3 && !audio_is_playing(BossMusic)){
 	audio_play_sound(BossMusic, 1, true);
 }
 
+if(room == victoryscene && !audio_is_playing(VictoryMusic)){
+	audio_stop_all();
+	audio_play_sound(VictoryMusic,1,true);
+}
+
 if(room == OpeningCutscene){
 	audio_stop_all();
 }
